@@ -1,0 +1,195 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+/**
+ * Interface
+ */
+.interface
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/**
+ * Time
+ */
+.time
+{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    font-size: 6vh;
+    background: #00000033;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/**
+ * Restart
+ */
+.restart
+{ 
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 10%;
+    color: #000000;
+    font-size: 40px;
+    background: #00000033;
+    padding-top: 10px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/**
+ * Controls
+ */
+.controls
+{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+}
+
+.controls .raw
+{
+    display: flex;
+    justify-content: center;
+}
+
+.controls .key
+{
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    border: 2px solid #ffffff;
+    background: #ffffff44;
+}
+
+.controls .key.large
+{
+    width: 110px;
+}
+
+.controls .key.active
+{
+    background: #ffffff99;
+}
+.label > div
+{
+    font-family: Helvetica, Arial;
+    font-size: 24px;
+    position: absolute;
+    background: #00000088;
+    color: white;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 30px;
+    user-select: none;
+}
+.lab > div
+{
+    font-family: Helvetica, Arial;
+    font-size: 36px;
+    position: absolute;
+    background: #5c0f9288;
+    color: white;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 30px;
+    user-select: none;
+}
+button,input,select,textarea {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    border-radius: 0;
+    -webkit-padding-start: 0;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: 1em
+}
+button,input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=file],input[type=month],input[type=number],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea {
+    height: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+a {
+    color: #ffffff;
+    outline: none;
+    
+}
+.button {
+    display: inline-block;
+    position: relative;top: 40px; left: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 1em;
+    overflow: hidden
+}
+.button:hover .label-hover,.button:hover .label-hover .inner {
+    transform: translateX(0)
+}
+.button .border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid #ffffff;
+    border-width: thick;
+    margin-bottom: 10px;
+}
+.button .label-hover {
+   
+    overflow: hidden;
+    background: #fff;
+    transform: translateX(-100%)
+}
+.button .label-hover,.button .label-hover .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .45s cubic-bezier(.4,0,.25,1);
+    will-change: transform
+}
+.button .label-hover .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transform: translateX(100%)
+}
